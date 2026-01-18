@@ -1,6 +1,6 @@
 {
   "name": "baliza16mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP Server oficial de balizame.com - Datos en tiempo real de balizas V16 activas en Espana",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
