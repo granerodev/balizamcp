@@ -1,0 +1,63 @@
+{
+  "name": "balizamcp",
+  "version": "1.0.0",
+  "description": "MCP Server oficial de balizame.com - Datos en tiempo real de balizas V16 activas en Espana",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "balizamcp": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "balizas",
+    "v16",
+    "dgt",
+    "trafico",
+    "tiempo-real",
+    "espana",
+    "seguridad-vial",
+    "datex2",
+    "nap",
+    "claude",
+    "ai",
+    "balizame"
+  ],
+  "author": {
+    "name": "granero",
+    "url": "https://balizame.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "balizamcp": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/granerodev/balizamcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/granerodev/balizamcp/issues"
+  },
+  "homepage": "https://balizame.com"
+}

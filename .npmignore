@@ -1,0 +1,17 @@
+# Source files (npm solo necesita dist/)
+src/
+tsconfig.json
+
+# Development
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Tests
+coverage/
+*.test.*
