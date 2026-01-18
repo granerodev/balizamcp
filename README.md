@@ -1,6 +1,6 @@
-# balizamcp
+# baliza16mcp
 
-[![npm version](https://badge.fury.io/js/balizamcp.svg)](https://www.npmjs.com/package/balizamcp)
+[![npm version](https://badge.fury.io/js/baliza16mcp.svg)](https://www.npmjs.com/package/baliza16mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
 [![balizame.com](https://img.shields.io/badge/balizame.com-official-orange)](https://balizame.com)
@@ -26,20 +26,20 @@ Conecta Claude y otros LLMs con datos de balizas V16, obteniendo las ubicaciones
 No necesitas instalar nada, usalo directamente:
 
 ```bash
-npx balizamcp
+npx baliza16mcp
 ```
 
 ### Opcion 2: Instalacion global
 
 ```bash
-npm install -g balizamcp
+npm install -g baliza16mcp
 ```
 
 ### Opcion 3: Desde codigo fuente
 
 ```bash
-git clone https://github.com/granerodev/balizamcp.git
-cd balizamcp
+git clone https://github.com/granerodev/baliza16mcp.git
+cd baliza16mcp
 npm install
 npm run build
 ```
@@ -65,7 +65,7 @@ Anade a tu archivo de configuracion `claude_desktop_config.json`:
   "mcpServers": {
     "balizas-v16": {
       "command": "npx",
-      "args": ["-y", "balizamcp"]
+      "args": ["-y", "baliza16mcp"]
     }
   }
 }
@@ -77,7 +77,7 @@ O si lo instalaste globalmente:
 {
   "mcpServers": {
     "balizas-v16": {
-      "command": "balizamcp"
+      "command": "baliza16mcp"
     }
   }
 }
@@ -114,7 +114,7 @@ Obtiene las balizas V16 actualmente activas en Espana.
   "totalEspana": 322,
   "balizas": [
     {
-      "id": "dgt-8355636",
+      "id": "v16-8355636",
       "coordenadas": { "lat": 40.416775, "lon": -3.703790 },
       "ubicacion": {
         "nombreCarretera": "A-6",
@@ -184,8 +184,8 @@ Las **balizas V16** son dispositivos de senalizacion luminosa de emergencia que 
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/granerodev/balizamcp.git
-cd balizamcp
+git clone https://github.com/granerodev/baliza16mcp.git
+cd baliza16mcp
 
 # Instalar dependencias
 npm install
@@ -206,4 +206,4 @@ npx @modelcontextprotocol/inspector node dist/index.js
 
 ---
 
-**Problemas o sugerencias?** [Abre un issue](https://github.com/granerodev/balizamcp/issues)
+**Problemas o sugerencias?** [Abre un issue](https://github.com/granerodev/baliza16mcp/issues)

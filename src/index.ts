@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * balizamcp - Datos en tiempo real de balizas V16 activas en España
+ * baliza16mcp - Datos en tiempo real de balizas V16 activas en España
  *
  * Servidor MCP oficial de balizame.com
  *
  * @author granero
  * @license MIT
  * @see https://balizame.com
- * @see https://github.com/granerodev/balizamcp
+ * @see https://github.com/granerodev/baliza16mcp
  */
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
@@ -130,7 +130,7 @@ function parseSituation(situationXml: string): BalizaActiva | null {
   }
 
   return {
-    id: `dgt-${id}`,
+    id: `v16-${id}`,
     lat: coords.lat,
     lon: coords.lon,
     carretera: roadMatch ? roadMatch[1].trim() : "",
@@ -186,7 +186,7 @@ async function obtenerBalizasActivas(): Promise<DatosBalizas> {
   try {
     const response = await fetch(DATA_SOURCE_URL, {
       headers: {
-        "User-Agent": `balizamcp/${VERSION} (+https://balizame.com)`,
+        "User-Agent": `baliza16mcp/${VERSION} (+https://balizame.com)`,
         "Accept": "application/xml, text/xml, */*",
         "Accept-Encoding": "gzip, deflate", // Solicitar compresión
       },
@@ -236,7 +236,7 @@ async function obtenerBalizasActivas(): Promise<DatosBalizas> {
 
 const server = new Server(
   {
-    name: "balizamcp",
+    name: "baliza16mcp",
     version: VERSION,
   },
   {
@@ -445,7 +445,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error(`balizamcp v${VERSION} - https://balizame.com`);
+  console.error(`baliza16mcp v${VERSION} - https://balizame.com`);
 }
 
 main().catch(console.error);

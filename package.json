@@ -1,11 +1,11 @@
 {
-  "name": "balizamcp",
-  "version": "1.0.1",
+  "name": "baliza16mcp",
+  "version": "1.0.0",
   "description": "MCP Server oficial de balizame.com - Datos en tiempo real de balizas V16 activas en Espana",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "balizamcp": "dist/index.js"
+    "baliza16mcp": "dist/index.js"
   },
   "type": "module",
   "scripts": {
@@ -19,13 +19,10 @@
     "model-context-protocol",
     "balizas",
     "v16",
-    "dgt",
     "trafico",
     "tiempo-real",
     "espana",
     "seguridad-vial",
-    "datex2",
-    "nap",
     "claude",
     "ai",
     "balizame"
@@ -36,8 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "balizamcp": "^1.0.0"
+    "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
